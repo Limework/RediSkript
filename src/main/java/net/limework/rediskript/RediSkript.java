@@ -58,6 +58,10 @@ public class RediSkript extends JavaPlugin {
         }
     }
 
+    public void SetRedisManager(RedisManager rm)
+    {
+        this.rm = rm;
+    }
     @Override
     public void onEnable() {
         saveDefaultConfig();

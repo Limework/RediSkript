@@ -249,7 +249,7 @@ public class RedisManager extends BinaryJedisPubSub implements Runnable {
         this.RedisService.shutdown();
         this.RedisService = null;
         this.RedisReconnector = null;
-
+        plugin.SetRedisManager(new RedisManager(plugin));
     }
     public void reload() {
         this.shutdown();
