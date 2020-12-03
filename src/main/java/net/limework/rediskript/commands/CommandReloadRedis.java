@@ -1,6 +1,7 @@
 package net.limework.rediskript.commands;
 
 import net.limework.rediskript.RediSkript;
+import net.limework.rediskript.managers.RedisManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -20,7 +21,10 @@ public class CommandReloadRedis implements CommandExecutor {
                     , "&2[&aRediSkript&2] &cThis command can only be executed in console.")));
             return true;
         }
-        plugin.getRedisManager().reload();
+
+        plugin.reloadConfig();
+        plugin.getRedisManager().shutdown();
+        plugin.getRedisManager().start();
         //not sending to sender, because this command can only be executed via console
         Bukkit.getLogger().info(ChatColor.translateAlternateColorCodes('&', "&eReloaded via command! Note this command is not stable, it should only be used in urgent cases where you absolutely need to change config details without restarting the server."));
 

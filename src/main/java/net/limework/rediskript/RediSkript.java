@@ -13,6 +13,7 @@ import net.limework.rediskript.skript.elements.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class RediSkript extends JavaPlugin {
 
@@ -69,6 +70,7 @@ public class RediSkript extends JavaPlugin {
     public void onDisable() {
         if (rm != null) rm.shutdown();
     }
+
     public RedisManager getRedisManager() {
         return rm;
     }
