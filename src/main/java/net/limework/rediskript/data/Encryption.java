@@ -17,7 +17,7 @@ public class Encryption {
     public Encryption(Configuration config){
         encryptionEnabled = config.getBoolean("Redis.EncryptMessages");
         if (encryptionEnabled) {
-            // AES-128 encryption
+            // AES encryption
             encryptionKey = config.getString("Redis.EncryptionKey");
             macKey = config.getString("Redis.MacKey");
         }
