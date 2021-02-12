@@ -4,6 +4,8 @@ Redis:
   Password: "yHy0d2zdBlRmaSPj3CiBwEv5V3XxBTLTrCsGW7ntBnzhfxPxXJS6Q1aTtR6DSfAtCZr2VxWnsungXHTcF94a4bsWEpGAvjL9XMU"
   Host: "127.0.0.1"
   #must be 2 or higher, if you set to lower, the addon will automatically use 2 as a minimum
+  #do not edit MaxConnections if you do not know what you're doing
+  #it is only useful to increase this number to account for PING between distant servers
   MaxConnections: 2
   #the default Redis port
   Port: 6379
@@ -24,6 +26,6 @@ Redis:
 #you can always send messages to all channels!
 #you can add as many channels as you wish!
 Channels:
-  - "Channel1"
-  - "Channel2"
+  - "global"
+  - "servername"
   - "Channel3"
