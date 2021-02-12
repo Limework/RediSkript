@@ -5,7 +5,7 @@ Redis:
   Host: "127.0.0.1"
   #must be 2 or higher, if you set to lower, the addon will automatically use 2 as a minimum
   #do not edit MaxConnections if you do not know what you're doing
-  #it is only useful to increase this number to account for PING between distant servers
+  #it is only useful to increase this number to account for PING between distant servers and when you are sending a lot of messages constantly
   MaxConnections: 2
   #the default Redis port
   Port: 6379
