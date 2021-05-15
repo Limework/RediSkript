@@ -1,3 +1,5 @@
+[![RediSkript Build](https://github.com/Limework/RediSkript/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/Limework/RediSkript/actions/workflows/maven.yml)
+
 RediSkript allows you to communicate between your servers with use of Redis, it's very fast and easy to use.
 
 Skript: https://github.com/SkriptLang/Skript
