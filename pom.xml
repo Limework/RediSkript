@@ -6,8 +6,12 @@
 
     <groupId>net.limework</groupId>
     <artifactId>RediSkript</artifactId>
-    <version>1.3.3</version>
-    <packaging>jar</packaging>
+    <version>1.4.0-SNAPSHOT</version>
+    <modules>
+        <module>RediSkript-core</module>
+        <module>RediSkript-bukkit</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <build>
         <resources>
@@ -46,48 +50,9 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/</url>
-        </repository>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-        <repository>
-            <id>commons-pool2</id>
-            <url>https://mvnrepository.com/artifact/org.apache.commons/commons-pool2</url>
-        </repository>
-        <repository>
-            <id>PaperMC</id>
-            <url>https://repo.destroystokyo.com/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>sk89q</id>
-            <url>http://maven.sk89q.com/repo</url>
-        </repository>
-    </repositories>
+
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.SkriptLang</groupId>
-            <artifactId>Skript</artifactId>
-            <version>2.5.3</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>3.5.1</version>
-        </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>

@@ -1,6 +1,5 @@
 package net.limework.rediskript.data;
 
-import org.bukkit.configuration.Configuration;
 import org.cryptomator.siv.SivMode;
 import org.cryptomator.siv.UnauthenticCiphertextException;
 
@@ -9,17 +8,17 @@ import java.nio.charset.StandardCharsets;
 
 public class Encryption {
 
-    private boolean encryptionEnabled;
+    private final boolean encryptionEnabled;
     private String encryptionKey;
     private String macKey;
     private final SivMode AES_SIV = new SivMode();
 
-    public Encryption(Configuration config){
-        encryptionEnabled = config.getBoolean("Redis.EncryptMessages");
-        if (encryptionEnabled) {
+    public Encryption(boolean encryptionEnabled, String encryptionKey, String macKey){
+        this.encryptionEnabled = encryptionEnabled;
+        if (this.encryptionEnabled) {
             // AES encryption
-            encryptionKey = config.getString("Redis.EncryptionKey");
-            macKey = config.getString("Redis.MacKey");
+            this.encryptionKey = encryptionKey;
+            this.macKey = encryptionKey;
         }
     }
 
