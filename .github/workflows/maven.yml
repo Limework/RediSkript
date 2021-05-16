@@ -29,4 +29,4 @@ jobs:
      # Artifact name
        name: RediSkript_JAR
      # Destination path
-       path: target/Red*
+       path: target/*.jar

@@ -5,7 +5,7 @@
     <parent>
         <artifactId>RediSkript</artifactId>
         <groupId>net.limework</groupId>
-        <version>1.3.3</version>
+        <version>1.4.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -70,6 +70,14 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <outputDirectory>../target</outputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -91,6 +99,11 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>3.5.1</version>
+        </dependency>
+        <dependency>
+            <groupId>net.limework</groupId>
+            <artifactId>RediSkript-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 

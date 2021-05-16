@@ -6,7 +6,7 @@
 
     <groupId>net.limework</groupId>
     <artifactId>RediSkript</artifactId>
-    <version>1.3.3</version>
+    <version>1.4.0-SNAPSHOT</version>
     <modules>
         <module>RediSkript-core</module>
         <module>RediSkript-bukkit</module>
@@ -53,11 +53,6 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>3.5.1</version>
-        </dependency>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
