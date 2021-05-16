@@ -50,11 +50,22 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <id>commons-pool2</id>
+            <url>https://mvnrepository.com/artifact/org.apache.commons/commons-pool2</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20201115</version>
+            <version>20210307</version>
         </dependency>
         <dependency>
             <groupId>org.cryptomator</groupId>
