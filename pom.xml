@@ -7,7 +7,11 @@
     <groupId>net.limework</groupId>
     <artifactId>RediSkript</artifactId>
     <version>1.3.3</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>core</module>
+        <module>bukkit</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <build>
         <resources>
