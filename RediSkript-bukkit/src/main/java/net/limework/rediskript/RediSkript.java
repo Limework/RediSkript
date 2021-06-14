@@ -6,7 +6,6 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.registrations.EventValues;
 import ch.njol.skript.util.Date;
 import ch.njol.skript.util.Getter;
-import com.sun.tools.javac.tree.JCTree;
 import net.limework.rediskript.commands.CommandReloadRedis;
 import net.limework.rediskript.events.RedisMessageEvent;
 import net.limework.rediskript.managers.RedisController;
