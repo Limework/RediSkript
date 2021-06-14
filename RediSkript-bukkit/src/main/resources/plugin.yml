@@ -1,5 +1,5 @@
 main: net.limework.rediskript.RediSkript
-name: ${project.name}
+name: RediSkript
 version: ${project.version}
 authors: [Govindas, ham1255, DaemonicKing, limework.net]
 api-version: 1.13

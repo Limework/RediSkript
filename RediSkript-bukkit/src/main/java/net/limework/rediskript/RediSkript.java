@@ -95,7 +95,7 @@ public class RediSkript extends JavaPlugin {
     //DO NOT USE THIS IN NON STATIC CLASSES
     public static RediSkript getAPI(){
         //this safer than making static.
-        return (RediSkript) Bukkit.getServer().getPluginManager().getPlugin("RediSkript-bukkit");
+        return (RediSkript) Bukkit.getServer().getPluginManager().getPlugin("RediSkript");
     }
 
 }
