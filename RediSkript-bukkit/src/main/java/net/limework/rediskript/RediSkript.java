@@ -92,7 +92,8 @@ public class RediSkript extends JavaPlugin {
         return redisController;
     }
 
-    //Developer note: This is use for skript-reflect! DO NOT USE WITHIN THE PLUGIN! use depend injection with constructors
+    //Developer note: This is use for skript-reflect! and also for plugin use for static stuff -> skript effects classes
+    //DO NOT USE THIS IN NON STATIC CLASSES
     public static RediSkript getAPI(){
         //this safer than making static.
         return (RediSkript) Bukkit.getServer().getPluginManager().getPlugin("RediSkript-bukkit");
