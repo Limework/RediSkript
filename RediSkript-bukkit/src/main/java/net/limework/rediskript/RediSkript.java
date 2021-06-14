@@ -6,10 +6,12 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.registrations.EventValues;
 import ch.njol.skript.util.Date;
 import ch.njol.skript.util.Getter;
+import com.sun.tools.javac.tree.JCTree;
 import net.limework.rediskript.commands.CommandReloadRedis;
 import net.limework.rediskript.events.RedisMessageEvent;
 import net.limework.rediskript.managers.RedisController;
 import net.limework.rediskript.skript.elements.*;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -89,4 +91,11 @@ public class RediSkript extends JavaPlugin {
     public RedisController getRC() {
         return redisController;
     }
+
+    //Developer note: This is use for skript-reflect! DO NOT USE WITHIN THE PLUGIN! use depend injection with constructors
+    public static RediSkript getAPI(){
+        //this safer than making static.
+        return (RediSkript) Bukkit.getServer().getPluginManager().getPlugin("RediSkript-bukkit");
+    }
+
 }
