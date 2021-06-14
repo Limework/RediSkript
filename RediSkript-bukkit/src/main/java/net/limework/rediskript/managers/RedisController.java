@@ -27,6 +27,8 @@ public class RedisController extends BinaryJedisPubSub implements Runnable {
     private final JedisPool jedisPool;
 
     //this seems useless unless tls is OFF!
+
+    // class author is govindas :/
     private final Encryption encryption;
 
     private byte[][] channelsInByte;
@@ -257,4 +259,10 @@ public class RedisController extends BinaryJedisPubSub implements Runnable {
     public Boolean isRedisConnectionOffline() {
         return isConnectionBroken.get();
     }
+
+    // for skript reflect :)
+    public JedisPool getJedisPool() {
+        return jedisPool;
+    }
+    //
 }
