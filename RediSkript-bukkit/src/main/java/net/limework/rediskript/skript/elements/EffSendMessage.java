@@ -23,7 +23,7 @@ public class EffSendMessage extends Effect {
     @Override
     protected void execute(Event event) {
 
-        RediSkript plugin = (RediSkript) Bukkit.getPluginManager().getPlugin("RediSkript-bukkit");
+        RediSkript plugin = RediSkript.getAPI();
 
         String[] message = this.message.getAll(event);
         String channel = this.channel.getSingle(event);
