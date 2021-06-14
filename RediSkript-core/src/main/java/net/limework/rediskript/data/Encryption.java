@@ -18,7 +18,7 @@ public class Encryption {
         if (this.encryptionEnabled) {
             // AES encryption
             this.encryptionKey = encryptionKey;
-            this.macKey = encryptionKey;
+            this.macKey = macKey;
         }
     }
 
