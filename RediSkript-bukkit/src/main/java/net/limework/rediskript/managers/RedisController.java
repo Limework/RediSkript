@@ -59,7 +59,7 @@ public class RedisController extends BinaryJedisPubSub implements Runnable {
                 config.getString("Redis.Password"),
                 config.getBoolean("Redis.useTLS"));
         encryption = new Encryption(config.getBoolean("Redis.EncryptMessages"),
-                config.getString("Redis.EncryptionKe"),
+                config.getString("Redis.EncryptionKey"),
                 config.getString("Redis.MacKey"));
         setupChannels(config);
         isConnectionBroken = new AtomicBoolean(true);
